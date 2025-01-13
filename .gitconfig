@@ -1,0 +1,13 @@
+[alias]
+	b = branch
+	c = checkout
+	aliases = config --get-regexp alias
+	settings = config --global --list
+	l = log -4
+	camend = commit --amend --no-edit
+	test = "!f() { git fetch origin; git branch -D __test; git checkout -b __test ${1}; git reset master --soft; }; f"
+	s = status -s
+	su = submodule update
+	fpush = push --force
+[core]
+	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
